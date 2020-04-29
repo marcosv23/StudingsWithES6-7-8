@@ -1,0 +1,53 @@
+ p
+ {
+  text-decoration: underline;
+  font-family: "Fira Code";
+  padding:0;
+  margin:0;
+
+ }
+ 
+
+  strong
+  {
+  font-size: 20px;
+  }
+
+  ul
+  {
+    list-style: none;
+    padding:20px;
+    
+  }
+
+  li
+  {
+    clear:both;
+    padding:5px;
+    margin-top:50px;
+  
+  }
+
+  img
+  {
+    float:left;
+    width:100px;
+    margin-right:18px;
+
+  }
+
+
+
+   form
+   {
+    margin-left:100px;
+    
+    clear:both;
+   }
+  h2
+  {
+    text-shadow: blue;
+    text-overflow: ellipsis;
+    font-style: italic;
+    font-family: 'Fira Code';
+  }
