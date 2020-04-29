@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex01</title>
+</head>
+<body>
+  <script src="bundle.js"></script>
+  <script>
+
+    class User
+    {
+      constructor(email,senha=123)
+      {
+        this.email=email;
+        this.senha = senha;
+        this.admin = false;
+      }
+      isAdmin()
+      {
+        if(this.admin===true) return "Is Admin"
+        else return "Isn't Admin";
+      }
+      showData()
+      {
+        console.log("E-mail:   "+this.email+"   Senha:   "+this.senha)
+      }
+    }
+
+    class Admin extends User
+    {
+      constructor(email,senha)
+      {
+        super(email,senha)
+        this.admin=true;
+      }
+    
+      
+    }
+
+    us1= new User("peteretejose@hotmail.com");
+    adm = new Admin("josechompiras@hotmail.com");
+    us1.showData();
+    console.log(us1.isAdmin());
+
+
+
+  </script>
+  
+</body>
+</html>
